@@ -10,6 +10,8 @@ public class getTime  extends Thread {
         while(true) {
             myframe.Date.setText(myframe.dateFormat.format(new Date()));
             myframe.Time.setText(myframe.timeFormat.format(new Date()));
+            myframe.SettingDate.setText(myframe.settingdateFormat.format(new Date()));
+            myframe.SettingTime.setText(myframe.settingtimeFormat.format(new Date()));
             if(myframe.stop){
                 break;
             }
